@@ -15,7 +15,8 @@
 
 - 项目结构
 
-![](http://qiniu.mrain22.cn/201911101443_397.png)
+![image](https://github.com/leedan/jt809-server/assets/11623253/2761c9dd-b9de-4047-9cb9-a36f7b2f1928)
+
 
 ### 解码适配器
 亲测有效
