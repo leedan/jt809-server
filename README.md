@@ -19,6 +19,9 @@
 
 
 ### 解码适配器
+![image](https://github.com/leedan/jt809-server/assets/11623253/2f47c095-a548-4290-bbaf-15427a240e6e)
+
+
 亲测有效
 
 ```
