@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>cn.xiuminglee.jt809</groupId>
+    <groupId>cn.danlee.jt809</groupId>
     <artifactId>server</artifactId>
     <version>1.0-SNAPSHOT</version>
 
@@ -69,7 +69,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>cn.xiuminglee.jt809.JT809Server</mainClass>
+                            <mainClass>cn.danlee.jt809.JT809Server</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
