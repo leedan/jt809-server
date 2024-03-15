@@ -1,5 +1,6 @@
 package cn.danlee.jt809;
 
+import cn.danlee.jt809.common.util.CommonUtils;
 import cn.danlee.jt809.common.util.PropertiesUtil;
 import cn.danlee.jt809.handle.JT809ServerInitialzer;
 import io.netty.bootstrap.ServerBootstrap;
@@ -40,7 +41,7 @@ public class JT809Server {
         serverBootstrap.bind(port).addListener(future -> {
             if (future.isSuccess()) {
                 log.info("JT809Server在端口：{}启动成功!",port);
-                //CommonUtils.delDataTimer(); // 定时任务，定时删除垃圾数据
+                CommonUtils.delDataTimer(); // 定时任务，定时删除垃圾数据
             } else {
                 log.error("JT809Server在端口：{}启动失败!",port);
             }

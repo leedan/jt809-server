@@ -1,5 +1,6 @@
 package cn.danlee.jt809.common.util;
 
+import cn.danlee.jt809.db.JT809Dao;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import org.slf4j.Logger;
@@ -213,8 +214,7 @@ public class CommonUtils {
         TimerTask task = new TimerTask() {
             @Override
             public void run() {
-//                int i = JT809Dao.delYesterdayData();
-                int i = 0;
+                int i = JT809Dao.delYesterdayData();
                 log.info("删除{}条数据",i);
             }
         };
