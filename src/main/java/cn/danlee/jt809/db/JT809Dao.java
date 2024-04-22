@@ -35,7 +35,7 @@ public class JT809Dao {
     public static int delYesterdayData()  {
         QueryRunner runner = new QueryRunner();
         Connection conn = DataSourceConnectionFactory.getDbConnection();
-        String sql = "DELETE FROM bus_gps WHERE sendtime < DATE_FORMAT(DATEADD(DAY, '-30', CURRENT_DATE),'%Y-%m-%d')";
+        String sql = "DELETE FROM bus_gps WHERE sendtime <  DATE_FORMAT(DATE_ADD(NOW(), INTERVAL -30 DAY),'%Y-%m-%d')";
         int del = 0;
         try {
             del = runner.update(conn, sql);
